@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background: url("../Img/Crossword/background.jpg");
+    overflow: hidden!important;
+}
+
+#Footer{
+    width: 100%!important;
+}
+
+#head .item{
+    padding: 0 23px!important;
+}
+
+#container{
+    min-height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#puzzle-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    position: relative;
+}
+.puzzle-item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background: url(../Img/SlidePuzzle/bg7.png);
+    color: #ff5050;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+}
+
+.puzzle1{
+    background-position-x: 0px;
+}
+
+.puzzle2{
+    background-position-x: 200px;
+}
+
+.puzzle3{
+    background-position-x: 400px;
+}
+
+.puzzle4{
+    background-position-x: 0px;
+    background-position-y: 200px;
+}
+
+.puzzle5{
+    background-position-x: 200px;
+    background-position-y: 200px;
+}
+
+.puzzle6{
+    background-position-x: 400px;
+    background-position-y: 200px;
+}
+
+.puzzle7{
+    background-position-x: 0px;
+    background-position-y: 400px;
+}
+
+.puzzle8{
+    background-position-x: 200px;
+    background-position-y: 400px;
+}
+
+.puzzle9{
+    background-position-x: 400px;
+    background-position-y: 400px;
+}
+
+@media only screen and (max-height: 790px){
+    @keyframes grow {
+        from {
+            background-color: rgba(0,0,0,0);
+            font-size: 0;
+        }
+        to {
+            background-color: rgba(0,0,0,.8);
+            font-size: 5em;
+        }
+    }
+}

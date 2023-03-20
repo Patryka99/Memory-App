@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    /* background: radial-gradient(#000000, #262626); */
+    background: url(../Img/Crossword/background.jpg);
+}
+
+.overlay-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    font-family: serif;
+    display: none;
+    font-family: 'Righteous', cursive;
+    flex-direction: column;
+}
+
+#main_overlay{
+    background: url(../Img/Crossword/background.jpg);
+}
+
+.overlay-text.visible {
+    display: flex;
+    color: White;
+}
+
+@keyframes grow {
+    from {
+        background-color: rgba(0,0,0,0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0,0,0,.8);
+        font-size: 8em;
+    }
+}
+
+.overlay-text-small {
+    font-size: .3em;
+}
+
+#head {
+    z-index: 102!important;
+}
+.side-menu {
+    z-index: 101!important;
+}
+.register-popup {
+    z-index: 101!important;
+}
+.login-popup {
+    z-index: 101!important;
+}
+.bt-menu.open {
+    z-index: 101!important;
+}
+#footer{
+    z-index: 101!important;
+    margin-top: 5%;
+}
+
+@media only screen and (max-height: 790px){
+
+}

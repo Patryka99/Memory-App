@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+body{
+    background: url("../Img/gamesBG.png");
+    background-color: black;
+    overflow: hidden;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0!important;
+    width: 100vw;
+}
+
+#Content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    display: block;
+    width: 78.5%;
+    height: 90%;
+    background-color: rgba(64, 83, 81, 0.99);
+    border-radius: 5%;
+}
+
+a{
+    color: black;
+}
+
+#myChart{
+    width: auto;
+    min-height: 100%;
+}
+
+#usermenu{
+    width: 19%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid white;
+    display: grid;
+    grid-gap: 0px;
+}
+
+#gamesinfo{
+    width: 80.5%;
+    height: 100%;
+    float: left;
+    text-align: -webkit-center;
+}
+
+#usermenu .side-menu-item2:hover{
+    background-color: rgb(47, 54, 54);
+}
+
+#usermenu .side-menu-item2{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding: 10% 0;
+    color: white;
+    font-weight: 400;
+    border-radius: 30%;
+    border-bottom: 1px solid white;
+    border-top: 1px solid black;
+    font-size: 1.1em;
+}
+
+#usermenu .side-menu-item2:first-of-type{
+    margin-top: 6%;
+}
+
+#chart{
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 3%;
+    width: 70%;
+    max-height: 60%;
+    height: auto;
+    min-height: 50%;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+}
+
+.btnDif{
+    width: 15%;
+    display: inline-block;
+    min-height: 70px;
+    line-height: 70px;
+    margin: 3%;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: rgb(26, 29, 29);
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btnDif:hover{
+    background-color: rgba(26, 29, 29, 0);
+    -webkit-box-shadow:inset 0px 0px 0px 5px rgb(26, 29, 29);
+    -moz-box-shadow:inset 0px 0px 0px 5px rgb(26, 29, 29);
+    box-shadow:inset 0px 0px 0px 5px rgb(26, 29, 29);
+}
+
+#scoreb{
+    margin: 3%;
+    width: 80%;
+    border-radius: 0;
+    font-size: 2em;
+    max-height: 20%;
+}
+
+.styled-table thead tr {
+    background-color: rgb(26, 29, 29);
+}
+
+/* Media QUERIES ---------------- */
+
+@media only screen and (max-height: 790px){
+    img{
+        display: none;
+    }
+    #container{
+        width: 75%;
+        height: 80%;
+    }
+    .btnDif{
+        width: 13%;
+        min-height: 40px;
+        line-height: 40px;
+        font-size: 1em;
+    }
+    #chart{
+        max-height: 50%;
+    }
+    .styled-table{
+        font-size: 0.35em;
+    }
+}
+@media only screen and (max-height: 640px){
+    #usermenu .side-menu-item2{
+        padding: 5% 0;
+    }
+}
+@media only screen and (max-height: 450px){
+    #chart{
+        display: none;
+    }
+}
+
+/* 1650px */
+
+@media only screen and (max-width: 1750px){
+    #usermenu .side-menu-item2{
+        font-size: 1em;
+    }
+    img{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/* 1570px */
+
+@media only screen and (max-width: 1570px){
+        img{
+            height: 30px;
+            width: 30px;
+        }
+}
+
+
+    /* 1485px */
+
+    @media only screen and (max-width:1485px){
+        #usermenu .side-menu-item2{
+            font-size: 1em;
+        }
+        img{
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    /* 1330px */
+
+    @media only screen and (max-width:1330px){
+        #usermenu .side-menu-item2{
+            font-size: 0.8em;
+        }
+        img{
+            height: 10px;
+            width: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px){
+        #usermenu{
+            width: 30%;
+        }
+        #gamesinfo{
+            width: 69.5%;
+        }
+        #chart{
+            margin-top: 30%!important;
+            min-height: 20%;
+        }
+        .btnDif{
+            width: 20%;
+        }
+        #scoreb{
+            margin-top: 30%;
+        }
+        
+        #usermenu .side-menu-item2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+            width: 80%;
+            height: 60%;
+            padding: 10% 0;
+            color: white;
+            font-weight: 400;
+            border-radius: 30%;
+            border-bottom: 1px solid white;
+            border-top: 1px solid black;
+            font-size: 1.3em;
+        }
+        img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+
